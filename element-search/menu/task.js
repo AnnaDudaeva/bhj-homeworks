@@ -2,10 +2,10 @@
 
 document.querySelector(".menu_main").onclick = (event) => {
     if (event.target.nextElementSibling) {
-    event.target.nextElementSibling.classList.toggle("menu_active");
-    return false;
+      event.target.nextElementSibling.classList.toggle("menu_active");
+      return false;
     }
-};
+  };
 
 
 
@@ -13,7 +13,7 @@ document.querySelector(".menu_main").onclick = (event) => {
 
 
 
-//  (вариант с одним активным окном) 
+// вариант с одним активным окном
 // const menuSub = Array.from(document.querySelectorAll(".menu_sub"));
 
 // menuSub.forEach(item => {
@@ -28,4 +28,4 @@ document.querySelector(".menu_main").onclick = (event) => {
 //     item.classList.add("menu_active");
 //     return false
 //   }
-// })
+// });
