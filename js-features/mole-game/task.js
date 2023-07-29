@@ -26,4 +26,4 @@ for (let i = 1; i <= 10; i++) {
 
     deadSpan.textContent = dead;
     lostSpan.textContent = lost;
-  }
+  };
