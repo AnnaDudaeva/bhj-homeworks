@@ -8,4 +8,4 @@ const timerInterval = setInterval(() => {
     alert("Вы победили в конкурсе!");
     clearInterval(timerInterval);
   }
-}, 1000)
+}, 1000);
