@@ -1,9 +1,9 @@
-const slider = document.querySelectorAll(".slider__item");
-const arrowPrev = document.querySelector(".slider__arrow_prev");
-const arrowNext = document.querySelector(".slider__arrow_next");
-const dots = document.querySelectorAll(".slider__dot");
+const prev = document.querySelector('.slider__arrow_prev');
+const next = document.querySelector('.slider__arrow_next');
+const slider__item = document.querySelectorAll('.slider__item');
+let arr = Array.from(slider__item);
 
-//let sliderActive = 0;
+let sliderActive = 0;
 
 prev.onclick = function() {
     let activeSlide = arr.findIndex((item, idx) => item.className.includes('slider__item_active'));
