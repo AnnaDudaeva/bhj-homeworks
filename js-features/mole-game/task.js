@@ -4,7 +4,7 @@ const getHole = (index) => document.getElementById(`hole${index}`),
 let dead = parseInt(deadSpan.textContent),
   lost = parseInt(lostSpan.textContent);
 
-for (let i = 1; i <= 10; i++) {
+for (let i = 1; i <= 9; i++) {
   getHole(i).onclick = function () {
     if (getHole(i).classList.contains("hole_has-mole")) {
       dead += 1;
@@ -12,13 +12,13 @@ for (let i = 1; i <= 10; i++) {
       lost += 1;
     }
 
-    if (dead >= 10) {
+    if (dead === 10) {
       alert("Вы победили!");
       dead = 0;
       lost = 0;
     }
 
-    if (lost >= 5) {
+    if (lost === 5) {
       alert("Вы проиграли!");
       dead = 0;
       lost = 0;
@@ -27,3 +27,4 @@ for (let i = 1; i <= 10; i++) {
     deadSpan.textContent = dead;
     lostSpan.textContent = lost;
   };
+}
