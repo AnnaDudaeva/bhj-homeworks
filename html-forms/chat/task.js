@@ -39,7 +39,7 @@ input.addEventListener('keydown', (event) => {
         </div>
       </div>
       `;
-
+    input.value = "";
       messagesContainer.scrollTo(0, messagesContainer.scrollHeight);
     }
   })
